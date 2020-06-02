@@ -1,0 +1,16 @@
+{
+    "timeFrames":[
+        {
+            "securities":[
+                "MSFT",
+                "AMZN",
+                "TSLA"
+            ],
+            "securityType":"equities",
+            "startTime":"2002-01-02",
+            "endTime":"2019-12-30",
+            "period":"1d",
+            "resolution":"daily"
+        }
+    ]
+}

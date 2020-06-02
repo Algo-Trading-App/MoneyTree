@@ -1,0 +1,23 @@
+{
+    "timeFrames":[
+        {
+            "securities":[
+                "CXO",
+                "COP",
+                "EQIX",
+                "ILMN",
+                "M",
+                "MRO",
+                "MPC",
+                "NEM",
+                "PCG",
+                "RHT"
+            ],
+            "securityType":"equities",
+            "startTime":"2018-01-01",
+            "endTime":"2018-01-31",
+            "period":"1d",
+            "resolution":"daily"
+        }
+    ]
+}
