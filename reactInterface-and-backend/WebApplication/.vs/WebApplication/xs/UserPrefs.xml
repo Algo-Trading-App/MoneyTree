@@ -1,0 +1,47 @@
+﻿<Properties StartupConfiguration="{50A2546F-A631-4B6A-B567-D5D87F36FF41}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="../../Algo-Trader-Lean/Launcher/Program.cs">
+    <Files>
+      <File FileName="../../userData/Program.cs" Line="1" Column="1" />
+      <File FileName="../../userData/Models/Holding.cs" />
+      <File FileName="../../userData/Models/Portfolio.cs" />
+      <File FileName="../../userData/Models/User.cs" />
+      <File FileName="../../userData/Models/PortfolioHistory.cs" />
+      <File FileName="../../userData/Models/PortfolioActions.cs" />
+      <File FileName="../../userData/Models/userdbContext.cs" />
+      <File FileName="../../userData/RequestHandler.cs" />
+      <File FileName="../../userData/RabbitMQConsumer.cs" />
+      <File FileName="../../Algo-Trader-Lean/Launcher/Program.cs" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="WebApplication" expanded="True">
+            <Node name="Messaging" expanded="True" />
+            <Node name="QuantConnect.Lean.Launcher" expanded="True">
+              <Node name="Algo-Trader-Lean" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.WebApplication PreferredExecutionTarget="/Applications/Brave Browser.app" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <DisabledProjects>
+    <String>../../Algo-Trader-Lean/Launcher/QuantConnect.Lean.Launcher.csproj</String>
+  </DisabledProjects>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Release" />
+  <Debugger.DebugSourceFolders />
+  <MonoDevelop.Ide.ItemProperties.Messaging PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations>
+    <MultiItemSolutionRunConfiguration Id="MoneyTree" Name="MoneyTree">
+      <Items>
+        <StartupItem ItemId="{50A2546F-A631-4B6A-B567-D5D87F36FF41}" ItemName="Messaging" ConfigurationId="Default" />
+        <StartupItem ItemId="{C4A25556-2473-4BF0-8CF8-360DC304CFEF}" ItemName="WebApplication" ConfigurationId="Default" />
+      </Items>
+    </MultiItemSolutionRunConfiguration>
+  </MultiItemStartupConfigurations>
+</Properties>

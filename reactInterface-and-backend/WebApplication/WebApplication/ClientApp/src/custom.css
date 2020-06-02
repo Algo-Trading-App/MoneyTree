@@ -1,0 +1,27 @@
+html {
+  height: 100%;
+  margin: 0px;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+body {
+    height: 100%;
+    margin: 0px;
+    overflow-x: auto;
+    overflow-y: auto;
+}
+
+/* Provide sufficient contrast against white background */
+a {
+  color: #0366d6;
+}
+
+code {
+  color: #E01A76;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}

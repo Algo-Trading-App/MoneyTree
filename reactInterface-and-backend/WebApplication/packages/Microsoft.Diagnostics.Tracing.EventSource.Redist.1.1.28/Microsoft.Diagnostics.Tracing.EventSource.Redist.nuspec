@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/01/nuspec.xsd">
+  <metadata minClientVersion="2.5">
+    <id>Microsoft.Diagnostics.Tracing.EventSource.Redist</id>
+    <version>1.1.28</version>
+    <title>Microsoft EventSource Library Redistribution Package</title>
+    <authors>Microsoft</authors>
+    <owners>Microsoft</owners>
+    <licenseUrl>http://go.microsoft.com/fwlink/?LinkId=329770</licenseUrl>
+    <projectUrl>http://go.microsoft.com/fwlink/?LinkID=317375</projectUrl>
+    <iconUrl>http://go.microsoft.com/fwlink/?LinkID=288859</iconUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <description>This package includes the class Microsoft.Diagnostics.Tracing.EventSource which enables firing ETW events from managed code. This is the "runtime" or "redist" EventSource package and should be referenced directly only by other NuGet packages that need the EventSource functionality. Application developers that need this functionality should instead reference the Microsoft.Diagnostics.Tracing.EventSource NuGet package which provides an enhanced developer experience.
+
+      This package enables defining a strongly typed specification of an ETW provider that can be called by managed code. The EventSource class is also included in the .NET Framework. This package provides a newer version that has more features. It is meant to be used as a stop gap until those features it contains are ported to System.Diagnostics.Tracing.EventSource.
+
+      For more details, have a look at http://msdn.microsoft.com/en-us/library/system.diagnostics.tracing.eventsource.aspx.
+
+      New features:
+      - ETW channel support
+      - Support for static registration
+
+      Supported Platforms:
+      - .NET Framework 3.5
+      - .NET Framework 4.0
+      - .NET Framework 4.5
+      - Windows Store apps
+      - Windows Phone App 8.1</description>
+    <summary>EventSource Redist is the redistribution part of the EventSource managed library package.</summary>
+    <releaseNotes>Version 1.1.26 - Added EventCounter support.  
+    Version 1.1.26 - 26 - Allowed 'Start' opcodes to have a relatedActivityID
+
+    Version 1.1.25 - EventSource has a number of new non-trivial features
+        DynamicEvents - Allows events defined 'on the fly' by without creating a 'event method'.
+        RichPayloads - Allows specially attributed classes and arrays as well as primitive types to be passed as a payload.
+        ActivityTracking - Causes Start and Stop events to tag events between them with ID that represents all currrntly active activties. 
+        Goto http://blogs.msdn.com/b/vancem/archive/tags/eventsource/ for details/specs</releaseNotes>
+    <copyright>Copyright (c) Microsoft Corporation</copyright>
+    <tags>EventSource Microsoft ETW EventLog Channel</tags>
+  </metadata>
+</package>

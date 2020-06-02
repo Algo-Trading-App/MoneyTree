@@ -1,0 +1,51 @@
+﻿
+a.navbar-brand {
+  white-space: normal;
+  text-align: center;
+  word-break: break-all;
+}
+
+html {
+  font-size: 14px;
+}
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.box-shadow {
+  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+.button-login:hover {
+    cursor: pointer;
+}
+
+.input {
+    padding: 10px;
+    margin: 10px;
+    border-spacing: 10px;
+}
+
+.divider {
+    width:5px;
+    height: auto;
+    display: inline-block;
+}
+
+.spacer {
+    width: auto;
+    height: 15px;
+    display: inline-block;
+}
+
+.submit {
+    position: absolute;
+    right: 100px;
+    bottom: 350px;
+}
+
+.page {
+    margin: 50px;
+}
