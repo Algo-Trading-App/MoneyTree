@@ -44,7 +44,7 @@ class RabbitMQBroker():
 	    pika.ConnectionParameters(host="localhost"))
 	    channel = connection.channel()
 
-	    channel.queue_declare(queue=queue)
+	    channel.queue_declare(queue=queue, auto_delete=True)
 
 	    channel.basic_publish(exchange="", routing_key=routingKey, body=str(message))
 	    print(" [x] Sent message to queue:", queue)

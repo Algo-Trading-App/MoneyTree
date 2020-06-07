@@ -60,6 +60,7 @@ namespace WebApplication.Controllers
             //UDMRequest request = new UDMRequest() { Operation = UDMOperation.Read, RequestType = UDMRequestType.User, Email = email };
             try
             {
+                Console.WriteLine("PURCHASES");
                 //string result = RMQService.ExecuteRequest(request, "", "", "rpc_queue");
                 //UDMUser info = JsonConvert.DeserializeObject<UDMUser>(result, new JsonSerializerSettings() { TypeNameHandling = TypeNameHandling.All, PreserveReferencesHandling = PreserveReferencesHandling.All });
                 return new JsonResult(null);

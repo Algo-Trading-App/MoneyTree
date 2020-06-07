@@ -280,6 +280,7 @@ namespace QuantConnect.Brokerages.InteractiveBrokers
             Console.WriteLine(password);
             Console.WriteLine(tradingMode);
             Console.WriteLine(port);
+            Console.WriteLine("This is being called");
 
 
             _ibAutomater.OutputDataReceived += OnIbAutomaterOutputDataReceived;

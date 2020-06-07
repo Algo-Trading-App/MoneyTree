@@ -67,13 +67,13 @@
   "live-data-port": 8020,
 
   // interactive brokers configuration
-  "ib-account": "",
-  "ib-user-name": "",
-  "ib-password": "",
-  "ib-host": "127.0.0.1",
-  "ib-port": "4002",
+  "ib-account": "DU2264116",
+  "ib-user-name": "j0rdan103",
+  "ib-password": "Matthewunited1",
+  "ib-host": "gdc1.ibllc.com",
+  "ib-port": "4000",
   "ib-agent-description": "Individual",
-  "ib-tws-dir": "/Users/matthewjordan/Jts/",
+  "ib-tws-dir": "/Users/matthewjordan/IBJts/",
   "ib-trading-mode": "paper",
   "ib-enable-delayed-streaming-data": true,
 

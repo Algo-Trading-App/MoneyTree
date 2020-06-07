@@ -2,7 +2,7 @@ import json
 import sys
 
 from datafetcher import DataFetcher
-from rabbitmqbroker import RabbitMQBroker 
+from rabbitmqbroker import RabbitMQBroker
 
 # Quandl API Key
 API_KEY = "b5wYcieS5ZYxGvJNN7yW"
@@ -32,7 +32,10 @@ def main():
         broker.send(0, "PortfGen", "PortfGen")
         broker.recieve()
 
-#    if ("-m" in sys.argv):
+    if ("-m" in sys.argv):
+        broker = RabbitMQBroker(API_KEY)
+        broker.send(0, "rpc_queue", "rpc_queue")
+        broker.recieve()
 
 
 
