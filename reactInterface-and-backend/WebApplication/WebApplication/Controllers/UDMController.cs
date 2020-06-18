@@ -27,7 +27,7 @@ namespace WebApplication.Controllers
 
             try
             {
-                string result = RMQService.ExecuteRequest(request, "", "", "rpc_queue");
+                string result = RMQService.ExecuteRequest(request, "backtestTrigger", "backtestTrigger", "rpc_queue");
                 UDMUser info = JsonConvert.DeserializeObject<UDMUser>(result, new JsonSerializerSettings() { TypeNameHandling = TypeNameHandling.All, PreserveReferencesHandling = PreserveReferencesHandling.All });
                 return new JsonResult(result);
             }
@@ -44,7 +44,7 @@ namespace WebApplication.Controllers
 
             try
             {
-                string result = RMQService.ExecuteRequest(request, "", "", "rpc_queue");
+                string result = RMQService.ExecuteRequest(request, "backtestTrigger", "backtestTrigger", "rpc_queue");
                 List<UDMPortfolio> info = JsonConvert.DeserializeObject<List<UDMPortfolio>>(result, new JsonSerializerSettings() { TypeNameHandling = TypeNameHandling.All, PreserveReferencesHandling = PreserveReferencesHandling.All });
                 return new JsonResult(info);
             }
@@ -60,9 +60,9 @@ namespace WebApplication.Controllers
             //UDMRequest request = new UDMRequest() { Operation = UDMOperation.Read, RequestType = UDMRequestType.User, Email = email };
             try
             {
-                Console.WriteLine("PURCHASES");
-                //string result = RMQService.ExecuteRequest(request, "", "", "rpc_queue");
-                //UDMUser info = JsonConvert.DeserializeObject<UDMUser>(result, new JsonSerializerSettings() { TypeNameHandling = TypeNameHandling.All, PreserveReferencesHandling = PreserveReferencesHandling.All });
+                Console.WriteLine(portfolio);
+                string result = RMQService.ExecuteRequest(portfolio, "backtestTrigger", "backtestTrigger", "rpc_queue");
+                UDMUser info = JsonConvert.DeserializeObject<UDMUser>(result, new JsonSerializerSettings() { TypeNameHandling = TypeNameHandling.All, PreserveReferencesHandling = PreserveReferencesHandling.All });
                 return new JsonResult(null);
             }
             catch (Exception ex)

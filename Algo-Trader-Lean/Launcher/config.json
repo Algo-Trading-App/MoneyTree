@@ -6,10 +6,10 @@
   // two predefined environments, 'backtesting' and 'live', feel free
   // to add more!
 
-  "environment": "live-interactive", // "live-paper", "backtesting", "live-interactive", "live-interactive-iqfeed"
+  "environment": "backtest", // "live-paper", "backtesting", "live-interactive", "live-interactive-iqfeed"
 
   // algorithm class selector
-  "algorithm-type-name": "RabbitMQLive",
+  "algorithm-type-name": "RabbitMQTest",
 
   // Algorithm language selector - options CSharp, FSharp, VisualBasic, Python, Java
   "algorithm-language": "CSharp",
@@ -71,7 +71,7 @@
   "ib-user-name": "j0rdan103",
   "ib-password": "Matthewunited1",
   "ib-host": "gdc1.ibllc.com",
-  "ib-port": "4000",
+  "ib-port": "4002",
   "ib-agent-description": "Individual",
   "ib-tws-dir": "/Users/matthewjordan/IBJts/",
   "ib-trading-mode": "paper",
